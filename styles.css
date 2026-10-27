@@ -919,7 +919,7 @@ a.hero-btn.npfWidgetButton {
   background-repeat: no-repeat;
 }
 .fees-inner-container{
-  width: min(92%, 1080px);
+  width: min(94%, 1200px);
   margin: 0 auto;
   padding: 0 clamp(12px, 2vw, 20px);
   box-sizing: border-box;
@@ -957,9 +957,11 @@ a.hero-btn.npfWidgetButton {
 /* Table Wrapper */
 .table-wrapper {
   border-radius: 16px;
-  padding: clamp(22px, 2.5vw, 28px) 0;
+  padding: clamp(20px, 2.4vw, 28px) clamp(16px, 2.4vw, 28px);
   overflow-x: auto;
   border: 2px solid white;
+  background: rgba(255, 255, 255, 0.06);
+  box-sizing: border-box;
 }
 
 /* Table */
@@ -3306,19 +3308,20 @@ table td {
 .fees-total-line {
   color: #fff;
   margin: 0 0 18px;
-  font-size: 1.15rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
   font-weight: 700;
+  letter-spacing: 0.01em;
 }
 .payment-options-block {
   width: 100%;
-  max-width: 1100px;
-  margin: 2rem auto 0;
-  padding: 0.25rem 0 0.5rem;
+  margin: 1.75rem auto 0;
+  padding: 1.75rem 0 0.25rem;
   color: #fff;
   text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
   box-sizing: border-box;
 }
-.payment-options-header { margin-bottom: 1.35rem; }
+.payment-options-header { margin-bottom: 1.35rem; max-width: 760px; }
 .payment-options-eyebrow {
   display: inline-block;
   margin: 0 0 0.55rem;
@@ -3333,7 +3336,7 @@ table td {
   text-transform: uppercase;
 }
 .payment-options-title {
-  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
   font-weight: 750;
   margin: 0 0 0.6rem;
   color: #ffe600;
@@ -3346,13 +3349,13 @@ table td {
   font-size: clamp(0.92rem, 1.15vw, 1.05rem);
   color: rgba(255, 255, 255, 0.92);
 }
-.payment-audience { margin-top: 1.25rem; }
+.payment-audience { margin-top: 1.35rem; }
 .payment-audience + .payment-audience {
-  margin-top: 1.75rem;
-  padding-top: 1.5rem;
+  margin-top: 1.85rem;
+  padding-top: 1.6rem;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
-.payment-audience-head { margin-bottom: 0.9rem; }
+.payment-audience-head { margin-bottom: 1rem; }
 .payment-options-subtitle {
   font-size: clamp(1.05rem, 1.5vw, 1.25rem);
   font-weight: 700;
@@ -3362,7 +3365,7 @@ table td {
 .payment-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.9rem;
+  gap: 1rem;
   align-items: stretch;
 }
 .payment-cards--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -3370,15 +3373,21 @@ table td {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  padding: 1.15rem 1.05rem 1.2rem;
-  border-radius: 14px;
+  gap: 0.45rem;
+  padding: 1.25rem 1.15rem 1.3rem;
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   min-height: 100%;
   box-sizing: border-box;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.payment-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 230, 0, 0.35);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 .payment-card--jodo {
   background: linear-gradient(165deg, rgba(255, 230, 0, 0.16) 0%, rgba(255, 255, 255, 0.08) 62%);
@@ -3398,8 +3407,8 @@ table td {
 }
 .payment-card-badge {
   position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
+  top: 0.85rem;
+  right: 0.85rem;
   padding: 0.22rem 0.58rem;
   border-radius: 999px;
   background: #ffe600;
@@ -3410,7 +3419,7 @@ table td {
   text-transform: uppercase;
 }
 .payment-option-name {
-  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
   font-weight: 700;
   margin: 0;
   color: #ffe600;
@@ -3419,32 +3428,36 @@ table td {
 }
 .payment-card-highlight {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
 }
 .payment-card ul {
-  margin: 0.4rem 0 0;
+  margin: 0.45rem 0 0;
   padding-left: 1.05rem;
 }
 .payment-card li {
-  margin: 0.32rem 0;
-  line-height: 1.5;
-  font-size: 0.9rem;
+  margin: 0.35rem 0;
+  line-height: 1.55;
+  font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.92);
 }
 .payment-options-note {
-  margin: 1.1rem 0 0;
-  padding: 0.85rem 1rem;
-  border-radius: 10px;
+  margin: 1.2rem 0 0;
+  padding: 0.95rem 1.1rem;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   border-left: 3px solid #ffe600;
   line-height: 1.55;
   font-size: clamp(0.88rem, 1.1vw, 1rem);
   color: rgba(255, 255, 255, 0.95);
 }
-@media (max-width: 991px) {
-  .payment-cards,
+@media (max-width: 1100px) {
+  .payment-cards { grid-template-columns: 1fr; }
   .payment-cards--two { grid-template-columns: 1fr; }
+}
+@media (max-width: 991px) {
+  .payment-options-block { padding-top: 1.35rem; }
   .payment-option-name { padding-right: 4rem; }
+  .table-wrapper { padding: 16px 12px; }
 }
