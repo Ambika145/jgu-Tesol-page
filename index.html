@@ -109,7 +109,7 @@ style="display:none;visibility:hidden"></iframe></noscript>
     <div class="divider"></div>
 
     <div class="info-item">
-      <span>Easy EMI</span>
+      <span>Jodo EMI</span>
       <strong>Options</strong>
     </div>
   </div>
@@ -235,12 +235,13 @@ style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="table-wrapper" id="contentArea">
+    <p class="fees-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
     <!-- Default Fees Table -->
     <table class="fees-table">
       <thead>
         <tr>
-          <th>Fee Category</th>
-          <th>Amount </th>
+          <th>Fee</th>
+          <th>Amount</th>
           <th>Due Date</th>
         </tr>
       </thead>
@@ -248,20 +249,93 @@ style="display:none;visibility:hidden"></iframe></noscript>
         <tr>
           <td>Registration Amount</td>
           <td>INR 25,000</td>
-          <td>Upon acceptance of the offer letter</td>
+          <td>Upon acceptance of Offer Letter</td>
         </tr>
         <tr>
-          <td>1st Installment</td>
+          <td>Instalment 1</td>
           <td>INR 1,25,000</td>
           <td>Before Batch Commencement</td>
         </tr>
         <tr>
-          <td>2nd Installment</td>
+          <td>Instalment 2</td>
           <td>INR 1,25,000</td>
-          <td>By 15th Jul 2027</td>
+          <td>By 15th July 2027</td>
         </tr>
       </tbody>
     </table>
+
+    <div class="payment-options-block">
+      <div class="payment-options-header">
+        <p class="payment-options-eyebrow">Flexible Financing</p>
+        <h3 class="payment-options-title">Tuition Fee &amp; Payment Options</h3>
+        <p class="payment-options-intro">We offer flexible payment options to help learners manage their programme fees conveniently. Available payment options may vary depending on the programme and applicant category.</p>
+      </div>
+
+      <section class="payment-audience" aria-labelledby="pay-indian-heading">
+        <div class="payment-audience-head">
+          <h4 class="payment-options-subtitle" id="pay-indian-heading">For Indian Nationals</h4>
+          <p class="payment-options-lead">You may choose from the following payment options:</p>
+        </div>
+        <div class="payment-cards">
+          <article class="payment-card">
+            <span class="payment-card-tag">Option 1</span>
+            <h5 class="payment-option-name">Full Payment</h5>
+            <p class="payment-card-highlight">Pay remaining fee in one go</p>
+            <ul>
+              <li><strong>Registration Fee:</strong> Pay the applicable registration fee at the time of registration.</li>
+              <li><strong>Remaining Programme Fee:</strong> Pay the complete remaining programme fee within 10 days from the date of registration.</li>
+            </ul>
+          </article>
+          <article class="payment-card payment-card--jodo">
+            <span class="payment-card-tag">Option 2</span>
+            <h5 class="payment-option-name">Jodo Flex</h5>
+            <p class="payment-card-highlight">3, 6 or 9 instalments</p>
+            <ul>
+              <li><strong>Registration Fee:</strong> Pay the applicable registration fee at the time of registration.</li>
+              <li><strong>Remaining Programme Fee:</strong> Pay the remaining programme fee through a structured instalment plan of 3, 6, or 9 instalments, as per the applicable payment schedule and terms.</li>
+            </ul>
+          </article>
+          <article class="payment-card payment-card--jodo payment-card--featured">
+            <span class="payment-card-tag">Option 3</span>
+            <span class="payment-card-badge">Popular</span>
+            <h5 class="payment-option-name">Jodo EMI &ndash; 12 Months</h5>
+            <p class="payment-card-highlight">Monthly EMI over 12 months</p>
+            <ul>
+              <li><strong>Registration Fee:</strong> Pay the applicable registration fee at the time of registration.</li>
+              <li><strong>Remaining Programme Fee:</strong> Pay the remaining programme fee in monthly instalments over 12 months, subject to eligibility, approval, and applicable terms and conditions.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="payment-options-note"><strong>Important Note:</strong> Indian citizens, including Non-Resident Indians (NRIs), who have valid Indian Aadhaar and PAN details may apply using the payment options available for Indian Nationals, subject to applicable eligibility requirements and verification.</p>
+      </section>
+
+      <section class="payment-audience" aria-labelledby="pay-foreign-heading">
+        <div class="payment-audience-head">
+          <h4 class="payment-options-subtitle" id="pay-foreign-heading">For Foreign Nationals</h4>
+          <p class="payment-options-lead">You may choose from the following payment options:</p>
+        </div>
+        <div class="payment-cards payment-cards--two">
+          <article class="payment-card">
+            <span class="payment-card-tag">Option 1</span>
+            <h5 class="payment-option-name">Full Payment</h5>
+            <p class="payment-card-highlight">Pay remaining fee in one go</p>
+            <ul>
+              <li><strong>Registration Fee:</strong> Pay the applicable registration fee at the time of registration.</li>
+              <li><strong>Remaining Programme Fee:</strong> Pay the complete programme fee within 10 days from the date of registration.</li>
+            </ul>
+          </article>
+          <article class="payment-card">
+            <span class="payment-card-tag">Option 2</span>
+            <h5 class="payment-option-name">Two-Instalment Payment Plan</h5>
+            <p class="payment-card-highlight">2 scheduled instalments</p>
+            <ul>
+              <li><strong>Registration Fee:</strong> Pay the applicable registration fee at the time of registration.</li>
+              <li><strong>Remaining Programme Fee:</strong> Pay the programme fee in two instalments, as per the applicable fee schedule mentioned for the programme.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
   </div>
   </div>
 </section>
@@ -704,6 +778,38 @@ style="display:none;visibility:hidden"></iframe></noscript>
 
   const feeTabs = document.querySelectorAll(".fees-tab");
 const contentArea = document.getElementById("contentArea");
+const paymentOptionsEl = contentArea ? contentArea.querySelector(".payment-options-block") : null;
+const paymentOptionsHTML = paymentOptionsEl ? paymentOptionsEl.outerHTML : "";
+const feesTableHTML = `
+        <p class="fees-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
+        <table class="fees-table">
+          <thead>
+            <tr>
+              <th>Fee</th>
+              <th>Amount</th>
+              <th>Due Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Registration Amount</td>
+              <td>INR 25,000</td>
+              <td>Upon acceptance of Offer Letter</td>
+            </tr>
+            <tr>
+              <td>Instalment 1</td>
+              <td>INR 1,25,000</td>
+              <td>Before Batch Commencement</td>
+            </tr>
+            <tr>
+              <td>Instalment 2</td>
+              <td>INR 1,25,000</td>
+              <td>By 15th July 2027</td>
+            </tr>
+          </tbody>
+        </table>
+        ${paymentOptionsHTML}
+      `;
 
 /* Recognition cards — mobile dotted pagination */
 (function () {
@@ -776,35 +882,7 @@ feeTabs.forEach((tab) => {
     const type = tab.getAttribute("data-tab");
 
     if (type === "fees") {
-      contentArea.innerHTML = `
-        <table class="fees-table">
-          <thead>
-            <tr>
-              <th>Fee Category</th>
-              <th>Amount</th>
-              <th>Due Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Registration Amount</td>
-              <td>INR 25,000 </td>
-              <td>Upon acceptance of the offer letter</td>
-            </tr>
-            <tr>
-              <td>1st Installment</td>
-              <td>INR 1,25,000</td>
-              <td>Before Batch Commencement</td>
-            </tr>
-            <tr>
-              <td>2nd Installment</td>
-              <td>INR 1,25,000</td>
-              <td>By 15th Jul 2027</td>
-            </tr>
-            
-          </tbody>
-        </table>
-      `;
+      contentArea.innerHTML = feesTableHTML;
     }
 
     if (type === "details") {
@@ -823,7 +901,7 @@ feeTabs.forEach((tab) => {
             </tr>
             <tr>
               <td>Total Tuition Fee</td>
-              <td>INR 2,50,000</td>
+              <td>INR 2,75,000</td>
             </tr>
             <tr>
               <td>Duration</td>
@@ -1196,5 +1274,16 @@ src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView
 />
 </noscript>
 <!-- End Facebook Pixel Code -->
+
+<!-- NoPaperForms / NIAA Chatbot -->
+<div class="npf_chatbots" data-w="a8b32b8ab432456a971900791d70c15b" style="display:none;"></div>
+<script type="text/javascript">
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = "https://chatbot.in8.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/e815e394ee244cd1a8dc3bebaf8d81bf/a8b32b8ab432456a971900791d70c15b";
+  document.body.appendChild(s);
+</script>
+
 </body>
 </html>
