@@ -1,270 +1,884 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M.A. in Teaching English to Speakers of Other Languages (TESOL) - O.P. Jindal Global University</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N94ZC5LW');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0K2JZFDWZ"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-K0K2JZFDWZ');
+    </script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>M.A. in Teaching English to Speakers of Other Languages (TESOL) - O.P. Jindal Global University</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Critical: hero layout; enquiry form scrolls inside card only -->
+    <style>
+      .hero-section {
+        overflow-x: clip !important;
+        overflow-y: visible !important;
+        background: #ffffff !important;
+        position: relative;
+        z-index: 10;
+        isolation: isolate;
+      }
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j
-,f);
-})(window,document,'script','dataLayer','GTM-N94ZC5LW');</script> 
-<!-- End Google Tag Manager -->
+      .hero-info-bar {
+        background: linear-gradient(90deg, #1a237e 0%, #4527a0 32%, #7b1fa2 62%, #00acc1 100%) !important;
+        position: relative !important;
+        z-index: 2 !important;
+        flex: none !important;
+        flex-shrink: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
 
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K0K2JZFDWZ"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-K0K2JZFDWZ');
-</script>
+      .hero-bottom-bars {
+        position: relative !important;
+        z-index: 2 !important;
+      }
 
+      .hero-section .hero-container {
+        position: relative !important;
+        z-index: 3 !important;
+      }
+
+      .hero-scholarship-bar {
+        background: #3f2a8c !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        padding: 0.55rem 1rem !important;
+      }
+
+      .hero-scholarship-text {
+        margin: 0 !important;
+        color: #fff !important;
+        font-size: clamp(0.78rem, 2.8vw, 0.95rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.4 !important;
+      }
+
+      .features-section {
+        position: relative !important;
+        z-index: 1 !important;
+        background: linear-gradient(180deg, #ffffff 0%, #faf6fc 55%, #f5f0fa 100%) !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        clear: both;
+      }
+
+      /* Hero button + logos — inline so changes show even when CSS is cached */
+      .hero-section .header-logo-jgu {
+        height: 5.75rem !important;
+        max-height: 5.75rem !important;
+        width: auto !important;
+      }
+
+      .hero-section .header-logo-jsbf {
+        height: 6.5rem !important;
+        max-height: 6.5rem !important;
+        width: auto !important;
+      }
+
+      .hero-section .btn-apply-now {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
+        padding: 0.9rem 2.85rem !important;
+        background-color: #ffffff !important;
+        background-image:
+          linear-gradient(#ffffff, #ffffff),
+          linear-gradient(135deg, #1a237e 0%, #3949ab 22%, #7b1fa2 55%, #00acc1 100%) !important;
+        background-origin: border-box !important;
+        background-clip: padding-box, border-box !important;
+        border: 3px solid transparent !important;
+        border-radius: 50px !important;
+        color: #4a148c !important;
+        font-weight: 800 !important;
+        font-size: clamp(0.92rem, 1.2vw, 1.05rem) !important;
+        letter-spacing: 0.06em !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        box-shadow: 0 6px 18px rgba(74, 20, 140, 0.16) !important;
+        flex-shrink: 0 !important;
+        position: relative !important;
+        z-index: 12 !important;
+        align-self: flex-start !important;
+        cursor: pointer !important;
+      }
+
+      .hero-section .hero-title {
+        font-size: clamp(2rem, 3.4vw, 2.85rem) !important;
+        line-height: 1.2 !important;
+        overflow: visible !important;
+        padding-top: 0.12em !important;
+      }
+
+      .hero-section .hero-subtitle {
+        font-size: clamp(0.95rem, 1.4vw, 1.15rem) !important;
+        font-weight: 800 !important;
+      }
+
+      .hero-section .hero-subtitle-line {
+        display: block !important;
+      }
+
+      .hero-section .hero-right {
+        max-width: 30rem !important;
+        z-index: 20 !important;
+      }
+
+      .hero-section .hero-enquiry-card {
+        width: 100% !important;
+        min-height: 22rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+      }
+
+      .hero-section .hero-enquiry-card h3 {
+        font-size: 1.25rem !important;
+        flex-shrink: 0 !important;
+      }
+
+      .hero-section .hero-npf-scroll {
+        flex: 1 1 auto !important;
+        min-height: 0 !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        overscroll-behavior: contain !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      @media screen and (max-width: 991px) {
+        .hero-section {
+          min-height: auto !important;
+          max-height: none !important;
+          overflow-x: clip !important;
+          overflow-y: visible !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .hero-section .header-logo-jgu,
+        .hero-section .header-logo-jsbf {
+          height: 3.5rem !important;
+          max-height: 3.5rem !important;
+        }
+
+        .hero-section .btn-apply-now {
+          padding: 0.85rem 2.4rem !important;
+          font-size: clamp(0.88rem, 2.8vw, 1rem) !important;
+          border-width: 3px !important;
+          align-self: center !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        .hero-section .hero-right {
+          width: min(100%, 30rem) !important;
+          max-width: min(100%, 30rem) !important;
+          margin-bottom: clamp(1.25rem, 4vw, 2rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card {
+          min-height: 18rem !important;
+          max-height: min(32rem, 78vh) !important;
+        }
+
+        .hero-section .hero-npf-scroll {
+          max-height: min(360px, 54vh) !important;
+          overflow-y: auto !important;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        /* SCALE-INVARIANT HERO.
+           Everything is sized in vh (bounded by clamp) so the layout occupies the
+           same physical fraction of the screen at 100% / 125% / 150% Windows
+           scaling — scaling only remaps CSS px of one physical screen, and vh
+           tracks that physical screen. The hero is pinned to exactly one viewport
+           with the info bar on the bottom grid row, so it is always fully visible
+           and nothing crops. */
+        .hero-section {
+          display: grid !important;
+          grid-template-rows: minmax(0, 1fr) auto !important;
+          grid-template-columns: minmax(0, 1fr) !important;
+          height: 100dvh !important;
+          min-height: 100dvh !important;
+          max-height: 100dvh !important;
+          box-sizing: border-box !important;
+          overflow: hidden !important;
+          --hero-form-bar-gap: clamp(0.75rem, 2.2vh, 2rem);
+          --hero-image-info-gap: 0;
+          --hero-form-iframe-h: 100%;
+          --hero-img-max: min(84vh, 52rem);
+        }
+
+        .hero-section .hero-container {
+          grid-row: 1 !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          max-width: min(1560px, 94vw) !important;
+          overflow: hidden !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: flex-start !important;
+          padding-top: clamp(0.4rem, 1.4vh, 1rem) !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+        }
+
+        .hero-section .hero-header {
+          flex: 0 0 auto !important;
+          padding-bottom: clamp(0.2rem, 0.8vh, 0.625rem) !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(4.2rem, 9.5vh, 6rem) !important;
+          max-height: clamp(4.2rem, 9.5vh, 6rem) !important;
+          width: auto !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(5.1rem, 15.8vh, 10rem) !important;
+          max-height: clamp(5.1rem, 15.8vh, 10rem) !important;
+          width: auto !important;
+        }
+
+        .hero-section .hero-main {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow: hidden !important;
+          align-items: end !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+          box-sizing: border-box !important;
+        }
+
+        .hero-left {
+          overflow: visible !important;
+          align-self: center !important;
+          justify-content: center !important;
+          min-height: 0 !important;
+          margin-top: 0 !important;
+          padding-top: 0.35rem !important;
+          padding-bottom: 0.35rem !important;
+          max-height: 100% !important;
+          box-sizing: border-box !important;
+          position: relative !important;
+          z-index: 4 !important;
+        }
+
+        .hero-left .btn-apply-now,
+        .hero-section .btn-apply-now {
+          margin-bottom: 1rem !important;
+          z-index: 12 !important;
+          position: relative !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.6rem, 0.4rem + 2.1vw, 3.15rem) !important;
+          line-height: 1.22 !important;
+          overflow: visible !important;
+          padding-top: 0.32em !important;
+          margin-top: 0 !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.5rem, 1.7vh, 1.1rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.8rem, 0.3rem + 0.95vw, 1.65rem) !important;
+          margin-top: clamp(0.75rem, 2.4vh, 1.55rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.8rem, 0.3rem + 0.85vw, 1.45rem) !important;
+          margin-top: clamp(0.6rem, 1.9vh, 1.25rem) !important;
+          line-height: 1.55 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.85rem, 2.6vh, 1.8rem) !important;
+          padding: clamp(0.75rem, 2vh, 1.25rem) clamp(2.4rem, 4.1vh, 3.75rem) !important;
+          font-size: clamp(0.85rem, 0.35rem + 0.6vw, 1.4rem) !important;
+        }
+
+        .hero-info-bar {
+          grid-row: 2 !important;
+          margin-top: var(--hero-image-info-gap) !important;
+          flex: none !important;
+          flex-shrink: 0 !important;
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          padding: clamp(0.85rem, 2.3vh, 1.55rem) 0 !important;
+        }
+
+        .hero-section .hero-info-inner {
+          max-width: min(1560px, 94vw) !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(1rem, 2.6vh, 1.45rem) !important;
+        }
+
+        .hero-center {
+          align-self: end !important;
+          height: 100% !important;
+          min-height: 0 !important;
+          transform: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          align-items: flex-end !important;
+          line-height: 0 !important;
+          overflow: hidden !important;
+        }
+
+        .hero-student-stack {
+          height: 100% !important;
+          max-height: 100% !important;
+          align-items: flex-end !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: hidden !important;
+        }
+
+        .hero-student-img {
+          max-height: 100% !important;
+          max-width: 100% !important;
+          width: auto !important;
+          height: auto !important;
+          object-position: bottom center !important;
+          transform: none !important;
+          margin: 0 !important;
+        }
+
+        .hero-right {
+          max-width: min(30rem, 34vw) !important;
+          max-height: 100% !important;
+          min-height: 0 !important;
+          overflow: hidden !important;
+          z-index: 20 !important;
+          align-self: stretch !important;
+          justify-self: end !important;
+          display: flex !important;
+          flex-direction: column !important;
+          margin-top: clamp(0.5rem, 2vh, 1.75rem) !important;
+          margin-bottom: var(--hero-form-bar-gap) !important;
+        }
+
+        .hero-enquiry-card {
+          flex: 1 1 auto !important;
+          max-height: 100% !important;
+          min-height: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          overflow: hidden !important;
+          padding: clamp(0.9rem, 2.4vh, 1.6rem) clamp(0.9rem, 1.6vw, 1.5rem) clamp(0.75rem, 1.6vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card h3 {
+          font-size: clamp(1.25rem, 3.2vh, 1.9rem) !important;
+          margin-bottom: clamp(0.6rem, 1.8vh, 1.3rem) !important;
+          flex-shrink: 0 !important;
+        }
+
+        .hero-npf-scroll {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .hero-section .hero-right {
+          max-width: min(32rem, 32vw) !important;
+        }
+      }
+
+      /* Laptop / short-viewport (<=800px tall, >=992px wide): slightly tighter
+         left column so title + Apply button always sit above the info bar. */
+      @media screen and (min-width: 992px) and (max-height: 800px) {
+        .hero-section {
+          --hero-form-bar-gap: clamp(0.5rem, 1.8vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-container {
+          padding-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+        }
+
+        .hero-section .hero-header {
+          padding-bottom: 0.15rem !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(3.2rem, 8vh, 4.4rem) !important;
+          max-height: clamp(3.2rem, 8vh, 4.4rem) !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(3.6rem, 11vh, 5.2rem) !important;
+          max-height: clamp(3.6rem, 11vh, 5.2rem) !important;
+        }
+
+        .hero-left {
+          padding-top: 0.15rem !important;
+          padding-bottom: 0.15rem !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.4rem, 0.3rem + 1.8vw, 2.5rem) !important;
+          line-height: 1.18 !important;
+          padding-top: 0.1em !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.78rem, 0.25rem + 0.8vw, 1.15rem) !important;
+          margin-top: clamp(0.4rem, 1.4vh, 0.85rem) !important;
+          line-height: 1.32 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.78rem, 0.25rem + 0.75vw, 1.05rem) !important;
+          margin-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-left .btn-apply-now,
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.5rem, 1.6vh, 0.95rem) !important;
+          margin-bottom: 0.3rem !important;
+          padding: clamp(0.5rem, 1.4vh, 0.8rem) clamp(1.8rem, 3vh, 2.6rem) !important;
+          font-size: clamp(0.8rem, 0.3rem + 0.55vw, 1rem) !important;
+        }
+
+        .hero-info-bar {
+          padding: clamp(0.55rem, 1.6vh, 1rem) 0 !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(0.85rem, 0.3rem + 0.7vw, 1.15rem) !important;
+        }
+      }
+
+      /* 150% Windows scaling only (very short viewport ≈627px). 100% (~940px) and
+         125% (~752px) are ABOVE this breakpoint and stay exactly as they are.
+         Here we scale the hero down just enough that the whole left column
+         (heading + text + button) and the info bar fit without clipping. */
+      @media screen and (min-width: 992px) and (max-height: 680px) {
+        .hero-section {
+          --hero-form-bar-gap: clamp(0.5rem, 1.6vh, 1rem) !important;
+          --hero-img-max: min(76vh, 30rem) !important;
+          /* Form is taller than the (shrunk) card → the card's scroll area shows
+             its own scrollbar so the whole form incl. SUBMIT is reachable. */
+          --hero-form-iframe-h: 32rem !important;
+        }
+
+        .hero-section .hero-header {
+          padding-bottom: 0.2rem !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(3rem, 8.6vh, 5rem) !important;
+          max-height: clamp(3rem, 8.6vh, 5rem) !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(3.4rem, 9.6vh, 5.6rem) !important;
+          max-height: clamp(3.4rem, 9.6vh, 5.6rem) !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.35rem, 4.5vh, 2rem) !important;
+          line-height: 1.2 !important;
+          overflow: visible !important;
+          padding-top: 0.12em !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.3rem, 1vh, 0.5rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.78rem, 2vh, 0.98rem) !important;
+          margin-top: clamp(0.4rem, 1.3vh, 0.7rem) !important;
+          line-height: 1.32 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.76rem, 1.85vh, 0.95rem) !important;
+          margin-top: clamp(0.3rem, 1vh, 0.55rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.45rem, 1.4vh, 0.8rem) !important;
+          padding: clamp(0.5rem, 1.3vh, 0.75rem) clamp(1.8rem, 3vh, 2.4rem) !important;
+          font-size: clamp(0.78rem, 1.9vh, 0.95rem) !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(0.82rem, 2.1vh, 1.05rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card h3 {
+          font-size: clamp(1.1rem, 2.7vh, 1.5rem) !important;
+          margin-bottom: clamp(0.4rem, 1.3vh, 0.85rem) !important;
+        }
+
+        /* Enquiry card fits the viewport; the form scrolls inside it, and the
+           card keeps its rounded corners (incl. the bottom) — the scroll area is
+           inset by padding and its bottom corners are rounded so the tall iframe
+           never squares off the card edge. */
+        .hero-section .hero-right {
+          align-self: stretch !important;
+          max-height: 100% !important;
+          overflow: hidden !important;
+        }
+
+        .hero-section .hero-enquiry-card {
+          max-height: 100% !important;
+          overflow: hidden !important;
+          border-radius: 1.25rem !important;
+          padding-bottom: clamp(0.85rem, 2.2vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-npf-scroll {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          border-bottom-left-radius: 0.9rem !important;
+          border-bottom-right-radius: 0.9rem !important;
+        }
+
+        .hero-section .hero-enquiry-card .npf_wgts,
+        .hero-section .hero-enquiry-card .npf_wgts iframe {
+          height: 32rem !important;
+          max-height: 32rem !important;
+          min-height: 32rem !important;
+        }
+      }
+
+      /* Hero title "keep" units (Global Health pattern): the TESOL title is long,
+         so it is split into nowrap units that wrap only BETWEEN units and are
+         sized by viewport width, keeping title + ENROLL button above the info bar.
+         Mobile (<992px) is untouched (units stay inline / wrap normally). */
+      @media screen and (min-width: 992px) {
+        .hero-section .hero-title-keep {
+          display: inline-block !important;
+          white-space: nowrap !important;
+          max-width: 100% !important;
+        }
+      }
+
+      /* Laptop band 992-1199px: width-based type so the 4-unit title takes
+         ~3-4 short lines instead of overflowing; any viewport height. */
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .hero-section .hero-title {
+          font-size: clamp(1.3rem, 2.15vw, 1.65rem) !important;
+          line-height: 1.16 !important;
+          padding-top: 0.06em !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.74rem, 1.2vw, 0.92rem) !important;
+          margin-top: clamp(0.35rem, 1.2vh, 0.7rem) !important;
+          line-height: 1.3 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.74rem, 1.15vw, 0.9rem) !important;
+          margin-top: clamp(0.3rem, 1vh, 0.55rem) !important;
+          line-height: 1.35 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.45rem, 1.4vh, 0.85rem) !important;
+          margin-bottom: 0.3rem !important;
+          padding: clamp(0.5rem, 1.3vh, 0.75rem) clamp(1.8rem, 3vw, 2.4rem) !important;
+          font-size: clamp(0.78rem, 1.1vw, 0.95rem) !important;
+        }
+      }
+
+      /* Short laptop viewports (>=1200px wide): cap title by height as well so
+         title + button never push past the info bar. Wide desktop (tall) is
+         unaffected because the cap only applies at <=800px tall. */
+      @media screen and (min-width: 1200px) and (max-height: 800px) {
+        .hero-section .hero-title {
+          font-size: clamp(1.4rem, 0.3rem + 1.7vw, min(2.5rem, 5.6vh)) !important;
+        }
+      }
+
+    </style>
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe
-src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
-height="0" width="0"
-style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <div class="container">
 
-    <div class="hero-area">
-    <div class="top-section">
-      <div class="left-text">
-        <section class="logo-section">
-          <div class="logo-container">
-            <img src="assets/logo-1.png" alt="Jindal Global University Logo" class="logo-img">
-          </div>
+<section class="hero-section section-global">
+  <div class="container hero-container">
+    <div class="hero-header">
+      <div class="header-logos">
+        <img src="assets/logo-1.png" class="header-logo-img header-logo-jgu" alt="Jindal Global University Logo">
+        <img src="assets/TESOL-logo.png" class="header-logo-img header-logo-tesol" alt="TESOL Programme Logo">
+      </div>
+    </div>
 
-          <div class="logo-container">
-            <img src="assets/TESOL-logo.png" alt="TESOL Programme Logo" class="logo-img logo-img--tesol">
-          </div>
-        </section>
+    <div class="hero-main">
+      <div class="hero-bg-circuit" aria-hidden="true"></div>
 
-        <h1 class="hero-main-title">
-          <span class="hero-title-prefix">M.A. in</span>
-          <span class="hero-title-gradient">Teaching English to Speakers of Other Languages (TESOL)</span>
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="hero-title-line">
+            <span class="hero-title-base">M.A. in </span>
+          </span>
+          <span class="hero-title-gradient">
+            <span class="hero-title-line"><span class="hero-title-keep">Teaching English</span> <span class="hero-title-keep">to Speakers</span></span>
+            <span class="hero-title-line"><span class="hero-title-keep">of Other</span> <span class="hero-title-keep">Languages (TESOL)</span></span>
+          </span>
         </h1>
-
-        <h2 class="hero-subtitle">Develop Advanced Expertise in English Language Teaching, Applied Linguistics, and Global Education.</h2>
-
-        <!-- Mobile Globe Image -->
-        <div class="mobile-globe">
-          <img src="assets/tesol-hero.png" alt="TESOL Programme">
-        </div>
-
-        <button type="button" class="gradient-btn npfWidgetButton npfWidget-2333389e25fd5a77c9fcb43e33be6c3d"><span class="gradient-btn-text">ENROLL NOW</span></button>
+        <div class="hero-title-rule" aria-hidden="true"></div>
+        <p class="hero-subtitle">
+          <span class="hero-subtitle-line">Develop Advanced Expertise in English Language Teaching, Applied Linguistics, and Global Education.</span>
+        </p>
+        <button type="button" class="npfWidgetButton npfWidget-2333389e25fd5a77c9fcb43e33be6c3d hero-npf-trigger" tabindex="-1" aria-hidden="true">ENROLL NOW</button>
+        <a href="#" class="btn-apply-now" id="heroApplyNowBtn" role="button">ENROLL NOW &nbsp;→</a>
       </div>
 
-      <div class="right-img">
-        <img src="assets/tesol-hero.png" alt="TESOL Programme Representative" class="circle-img" />
-      </div>
-
-      <div class="hero-form">
-        <div class="npf_wgts" data-height="420px" data-w="2333389e25fd5a77c9fcb43e33be6c3d"></div>
-      </div>
-    </div>
-
-    <div class="info-bar">
-    <div class="info-item">
-      <span>Postgraduate</span>
-      <strong>Degree</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <span>Duration:</span>
-      <strong>1 Year</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <span>Batch Starts:</span>
-      <strong>March 2027</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <span>Fully Online</span>
-      <strong>Programme</strong>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="info-item">
-      <span>Jodo EMI</span>
-      <strong>Options</strong>
-    </div>
-  </div>
-    </div>
-
-    <h2 class="title-center">What’s in it for you?</h2>
-
-    <!-- Swiper Slider -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/advance-training.png');">
-        <div class="feature-text">
-          <h3>Advanced Training in TESOL & Applied Linguistics</h3>
-          <p>Develop a strong theoretical foundation in second language acquisition, linguistics, and pedagogy to support effective English language teaching.​</p>
+      <div class="hero-center">
+        <div class="hero-student-stack">
+          <img src="assets/tesol-hero.png" alt="TESOL Programme Representative" class="hero-student-img">
         </div>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/reasearch-informed.png'); ">
-        <div class="feature-text">
-          <h3>Research-Informed, Practice-Oriented Curriculum</h3>
-          <p>Learn to design curricula, assessments, and instructional strategies grounded in evidence-based research and real-world teaching contexts.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/focus.png');">
-        <div class="feature-text">
-          <h3>Focus on Learner-Centred & Inclusive Pedagogy</h3>
-          <p>Apply teaching approaches that address diverse learner needs across cultural, academic, and professional environments.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/integration.png');">
-        <div class="feature-text">
-          <h3>Integration of Digital & Contemporary Teaching Methods</h3>
-          <p>Gain exposure to technology-enabled instruction, digital tools, and modern classroom practices relevant to online and blended learning models.​</p>
-        </div>
-      </div>
-    </div>
-
-      <!-- Slide 5 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/global.png');">
-        <div class="feature-text">
-          <h3>Global Relevance & Career Mobility</h3>
-          <p> Prepare for English teaching roles across schools, universities, training institutions, NGOs, and international education settings.​​</p>
-        </div>
-      </div>
-    </div>
-
-      <!-- Slide 6 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/fully-online.png');">
-        <div class="feature-text">
-          <h3>Fully Online, Flexible Learning Format</h3>
-          <p>Study without career interruption through a structured yet flexible online programme designed for working professionals and educators.​</p>
+      <div class="hero-right">
+        <div class="hero-enquiry-card">
+          <h3>ENQUIRE HERE!</h3>
+          <div class="hero-npf-scroll">
+            <div class="npf_wgts" data-height="400px" data-w="2333389e25fd5a77c9fcb43e33be6c3d"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Pagination Dots -->
-  <div class="swiper-pagination"></div>
-</div>
-
-
-</div>
-
- <!-- HERO SECTION -->
-<section class="hero-section">
-  <div class="hero-container">
-
-    <!-- LEFT IMAGE WRAPPER -->
-    <div class="hero-images-wrapper">
-      <div class="hero-image-col">
-        <img src="assets/about-1.png" alt="Campus Image">
-      </div>
-
-      <div class="hero-image-col">
-        <a href="#" class="hero-btn npfWidgetButton npfWidget-2333389e25fd5a77c9fcb43e33be6c3d">
-          Learn More About <br /> The Programme →
-        </a>
-        <img src="assets/about-2.png" alt="Policy Image">
+  <div class="hero-bottom-bars">
+    <div class="hero-info-bar">
+      <div class="hero-info-inner">
+        <div class="hero-info-item">
+          <strong>Postgraduate Degree</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Duration: 1 Year</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Batch Starts: March 2027</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Fully Online Programme</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Jodo EMI Options</strong>
+        </div>
       </div>
     </div>
-
-    <!-- RIGHT TEXT -->
-    <div class="hero-text">
-      <h1 class="hero-heading">About the Programme</h1>
-
-      <p><strong>M.A. in TESOL (Teaching English to Speakers of Other Languages)</strong></p>
-      <p style="margin:0">Master the Art of Teaching English Globally </p>
-
-      <p>
-        The online M.A. in TESOL equips you with globally relevant teaching skills in just one year. Learn second language acquisition, modern teaching methods, curriculum design, and assessment—so you can confidently create effective English learning experiences for diverse learners.
-      </p>
-
-      <p>
-        With a focus on digital pedagogy and AI-integrated learning, you gain practical exposure through live sessions and expert mentorship. Graduate as a skilled educator ready to teach, train, and lead across schools, universities, NGOs, and corporate learning environments worldwide.
-      </p>
-    </div>
-
   </div>
 </section>
 
-<!-- FEES Structure Table Section -->
- <section class="fees-section">
-  <div class="fees-inner-container">
-  <div class="fees-tabs">
-    <button class="fees-tab active" data-tab="fees">Fees Structure</button>
-    <button class="fees-tab" data-tab="eligibility">Eligibility</button>
-  </div>
+<section class="features-section section-global">
+  <div class="container features-container">
+    <h2 class="features-title">What’s in it for you?</h2>
 
-  <div class="table-wrapper" id="contentArea">
-    <p class="fees-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
-    <table class="fees-table">
-      <thead>
-        <tr>
-          <th>Fee</th>
-          <th>Amount</th>
-          <th>Due Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Registration Amount</td>
-          <td>INR 25,000</td>
-          <td>Upon acceptance of Offer Letter</td>
-        </tr>
-        <tr>
-          <td>Instalment 1</td>
-          <td>INR 1,25,000</td>
-          <td>Before Batch Commencement</td>
-        </tr>
-        <tr>
-          <td>Instalment 2</td>
-          <td>INR 1,25,000</td>
-          <td>By 15th July 2027</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="features-slider-wrap">
+      <button class="features-arrow prev" type="button" aria-label="Previous feature">&#10094;</button>
 
-  <div class="payment-options-block" id="paymentOptionsBlock">
+      <div class="features-slider-viewport" id="featuresSlider">
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/advance-training.png" alt="Advanced Training in TESOL &amp; Applied Linguistics" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Advanced Training in TESOL & Applied Linguistics</h3>
+              <p class="card-text">Develop a strong theoretical foundation in second language acquisition, linguistics, and pedagogy to support effective English language teaching.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/reasearch-informed.png" alt="Research-Informed, Practice-Oriented Curriculum" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Research-Informed, Practice-Oriented Curriculum</h3>
+              <p class="card-text">Learn to design curricula, assessments, and instructional strategies grounded in evidence-based research and real-world teaching contexts.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/focus.png" alt="Focus on Learner-Centred &amp; Inclusive Pedagogy" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Focus on Learner-Centred & Inclusive Pedagogy</h3>
+              <p class="card-text">Apply teaching approaches that address diverse learner needs across cultural, academic, and professional environments.​</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/integration.png" alt="Integration of Digital &amp; Contemporary Teaching Methods" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Integration of Digital & Contemporary Teaching Methods</h3>
+              <p class="card-text">Gain exposure to technology-enabled instruction, digital tools, and modern classroom practices relevant to online and blended learning models.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/global.png" alt="Global Relevance &amp; Career Mobility" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Global Relevance & Career Mobility</h3>
+              <p class="card-text"> Prepare for English teaching roles across schools, universities, training institutions, NGOs, and international education settings.​​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/fully-online.png" alt="Fully Online, Flexible Learning Format" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Fully Online, Flexible Learning Format</h3>
+              <p class="card-text">Study without career interruption through a structured yet flexible online programme designed for working professionals and educators.​</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="features-arrow next" type="button" aria-label="Next feature">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<section class="programme-overview-section section-global" id="about">
+  <div class="container programme-overview-container">
+    <div class="programme-overview-inner">
+      <div class="programme-overview-content">
+        <h2 class="programme-overview-heading">About the Programme</h2>
+        <div class="programme-overview-copy">
+          <p class="programme-overview-text"><strong>M.A. in TESOL (Teaching English to Speakers of Other Languages)</strong></p>
+          <p class="programme-overview-text">Master the Art of Teaching English Globally </p>
+          <p class="programme-overview-text">
+        The online M.A. in TESOL equips you with globally relevant teaching skills in just one year. Learn second language acquisition, modern teaching methods, curriculum design, and assessment—so you can confidently create effective English learning experiences for diverse learners.
+          </p>
+          <p class="programme-overview-text">
+        With a focus on digital pedagogy and AI-integrated learning, you gain practical exposure through live sessions and expert mentorship. Graduate as a skilled educator ready to teach, train, and lead across schools, universities, NGOs, and corporate learning environments worldwide.
+          </p>
+        </div>
+      </div>
+
+      <div class="programme-overview-media">
+        <figure class="programme-overview-campus">
+          <img src="assets/about-1.png" alt="Campus Image" class="programme-overview-img">
+        </figure>
+        <div class="programme-overview-side">
+          <a href="#" class="programme-learn-more-btn npfWidgetButton npfWidget-2333389e25fd5a77c9fcb43e33be6c3d">
+            <span class="programme-learn-more-text">Learn More About The Programme →</span>
+            <span class="programme-learn-more-arrow" aria-hidden="true">&#8592;</span>
+          </a>
+          <figure class="programme-overview-finance">
+            <img src="assets/about-2.png" alt="Policy Image" class="programme-overview-img">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="know-more-section section-global">
+  <div class="container know-more-container">
+    <div class="know-more-inner">
+      <div class="know-more-media">
+        <img src="assets/need-to-know.png" alt="Heritage Image" class="know-more-img">
+      </div>
+      <div class="know-more-content">
+        <h3 class="know-more-title">Need to know more?</h3>
+        <p class="know-more-lead">Explore the <strong>M.A. in Teaching English to Speakers of Other Languages (TESOL)</strong> in detail by downloading the full course brochure.</p>
+        <p class="know-more-text">Get comprehensive insights on curriculum, faculty, learning outcomes, and career pathways.</p>
+        <a href="#" class="btn know-more-cta font-weight-bold npfWidgetButton npfWidget-2333389e25fd5a77c9fcb43e33be6c3d">DOWNLOAD BROCHURE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tuition-section section-global" id="fees">
+  <div class="tuition-panel tuition-panel--fees" id="tuitionPanel">
+    <img class="tuition-panel-bg" id="tuitionPanelBg" src="assets/fees-bg.png" alt="" aria-hidden="true">
+    <div class="tuition-panel-overlay" aria-hidden="true"></div>
+    <div class="tuition-content">
+      <div class="tuition-tabs" role="tablist" aria-label="Tuition information">
+        <button type="button" class="tuition-tab active" role="tab" id="tuitionTabBtnFees" aria-selected="true" aria-controls="tuitionTabFees" data-tab="fees">
+          <span class="tuition-tab-text"><span class="tuition-tab-word">Fees</span> <span class="tuition-tab-word tuition-tab-word--gradient">Structure</span></span>
+        </button>
+        <button type="button" class="tuition-tab" role="tab" id="tuitionTabBtnEligibility" aria-selected="false" aria-controls="tuitionTabEligibility" data-tab="eligibility">
+          <span class="tuition-tab-text">Eligibility</span>
+        </button>
+      </div>
+
+      <div class="tuition-tab-panel active" id="tuitionTabFees" role="tabpanel" aria-labelledby="tuitionTabBtnFees">
+        <p class="tuition-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
+
+        <div class="tuition-table-wrap">
+          <table class="tuition-table">
+            <thead>
+              <tr>
+                <th>Fee</th>
+                <th>Amount</th>
+                <th>Due Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Registration Amount</td>
+                <td>INR 25,000</td>
+                <td>Upon acceptance of Offer Letter</td>
+              </tr>
+              <tr>
+                <td>Instalment 1</td>
+                <td>INR 1,25,000</td>
+                <td>Before Batch Commencement</td>
+              </tr>
+              <tr>
+                <td>Instalment 2</td>
+                <td>INR 1,25,000</td>
+                <td>By 15th July 2027</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+<div class="payment-options-block" id="paymentOptionsBlock">
     <div class="payment-options-header">
       <p class="payment-options-eyebrow">Flexible Financing</p>
       <h3 class="payment-options-title">Tuition Fee &amp; Payment Options</h3>
@@ -336,31 +950,43 @@ style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
   </div>
+      </div>
+
+      <div class="tuition-tab-panel" id="tuitionTabEligibility" role="tabpanel" aria-labelledby="tuitionTabBtnEligibility" hidden>
+        <div class="tuition-eligibility-stack">
+          <div class="tuition-eligibility-block-main">
+            <h3 class="tuition-eligibility-heading">Eligibility</h3>
+            <div class="tuition-table-wrap">
+              <table class="tuition-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Educational Qualification</td>
+                    <td>Bachelor’s degree in any discipline with a minimum of 50% marks, or relevant work experience</td>
+                  </tr>
+                  <tr>
+                    <td>Identity Proof</td>
+                    <td>Valid government-issued ID proof (Passport mandatory for international applicants)</td>
+                  </tr>
+                  <tr>
+                    <td>Selection Process</td>
+                    <td>Submission of a Statement of Purpose (500–1000 words) outlining academic background, professional experience, and motivation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Need To Know More Section -->
-<section class="info-section">
-    <div class="left">
-      <h2>Need to know more?</h2>
-      <!-- Mobile Globe Image -->
-      <div class="mobile-globe">
-        <img src="assets/need-to-know.png" alt="Globe Image">
-      </div>
-        <p>
-            Explore the <strong>M.A. in Teaching English to Speakers of Other Languages (TESOL)</strong> in detail by downloading the full course brochure.
-        </p>
-        <p>Get comprehensive insights on curriculum, faculty, learning outcomes, and career pathways.</p>
-        
-          <button type="button" class="gradient-btn npfWidgetButton npfWidget-2333389e25fd5a77c9fcb43e33be6c3d"><span class="gradient-btn-text">DOWNLOAD BROCHURE</span></button>
-    </div>
-
-    <div class="right">
-        <img src="assets/need-to-know.png" alt="Heritage Image">
-    </div>
-</section>
-
-<!-- Museology Compare Table -->
 <div class="museology-compare-wrapper">
   <h2 class="museology-heading">
     How Does the <span>TESOL</span> at JGU Stand Apart?
@@ -434,852 +1060,259 @@ style="display:none;visibility:hidden"></iframe></noscript>
   </table>
 </div>
 
-<!-- Career Outcome Section -->
-<section class="career-outcomes-section">
+<section class="career-pathways-section section-global">
+  <div class="container career-pathways-container">
+    <div class="career-pathways-panel">
+      <img class="career-pathways-bg" src="assets/career-outcome-bg.png" alt="" aria-hidden="true">
+      <div class="career-pathways-overlay" aria-hidden="true"></div>
+      <div class="career-pathways-inner">
+        <h2 class="career-pathways-title" title="Career Outcomes of M.A in TESOL from JGU-">Career<br>Outcomes</h2>
 
-  <div class="career-left">
-    <h2>
-      Career Outcomes of M.A in TESOL from JGU-
-    </h2>
-  </div>
-
-  <div class="career-right">
-
-    <!-- WRAPPER FOR BOTH ROWS -->
-    <div class="career-slider-wrapper">
-
-      <!-- 1st ROW -->
-      <div class="career-row" id="row1">
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/english-language.svg" alt="curator icon" />
-          </span> 
-          </h3>
-          <p><span style="color:blueviolet;font-weight: bold; ">English Language Educator</span> in schools, colleges, universities, and language institutions.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/tesol.svg" alt="curator icon" />
-          </span>
-          </h3>
-          <p><span style="color:blueviolet;font-weight: bold; ">TESOL Instructor</span> or Language Trainer in academic, professional, and corporate training environments​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/academic.svg" alt="curator icon" />
-          </span>
-          </h3>
-          <p><span style="color:blueviolet;font-weight: bold; ">Academic Coordinator</span> or Programme Facilitator supporting curriculum implementation and learner development.​​</p>
-        </div>
-      
-      </div>
-
-      <!-- 2nd ROW -->
-      <div class="career-row" id="row2">
-          <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/education.svg" alt="curator icon" />
-          </span>
-          </h3>
-          <p><span style="color:blueviolet;font-weight: bold; ">Education and Training Professional</span> within NGOs, educational organisations, and learning-focused institutions.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/international.png" alt="curator icon" />
-          </span>
-          </h3>
-          <p><span style="color:blueviolet;font-weight: bold; ">International English Language Teaching</span> Roles in Multicultural and Multilingual Education Settings.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/pathway.png" alt="curator icon" />
-          </span>
-          </h3>
-          <p><span style="color:blueviolet;font-weight: bold; ">Pathways to Further Academic Study,</span> including research-oriented programmes and doctoral studies in education or applied linguistics.​</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- BUTTONS -->
-    <!-- <div class="career-controls">
-      <button id="prevBtn">◀</button>
-      <div class="career-progress"><div id="progressBar"></div></div>
-      <button id="nextBtn">▶</button>
-    </div> -->
-
-  </div>
-</section>
-
-<!-- Faculty Section -->
-<section class="faculty-slider-section">
-  <h2 class="title-center faculty-section-title">Meet Our Faculty</h2>
-
-  <div class="faculty-slider-outer">
-    <button type="button" class="faculty-slider-nav faculty-slider-left" aria-label="Previous faculty">
-      &#10094;
-    </button>
-
-    <div class="faculty-slider-wrapper swiper">
-      <div class="swiper-wrapper">
-        <div class="faculty-slider-card swiper-slide">
-          <div class="faculty-slider-img-wrapper">
-            <img src="assets/suman.png" alt="Dr. Suman Rani">
-          </div>
-          <h3 class="faculty-slider-name">Dr. Suman Rani</h3>
-          <p class="faculty-slider-desc">
-            Associate Professor and Director English Language Centre
-          </p>
-        </div>
-
-        <div class="faculty-slider-card swiper-slide">
-          <div class="faculty-slider-img-wrapper">
-            <img src="assets/fatemeh.png" alt="Dr. Fatemeh Rajabi">
-          </div>
-          <h3 class="faculty-slider-name">Dr. Fatemeh Rajabi</h3>
-          <p class="faculty-slider-desc">
-            Associate Professor English Language Centre
-          </p>
-        </div>
-
-        <div class="faculty-slider-card swiper-slide">
-          <div class="faculty-slider-img-wrapper">
-            <img src="assets/jyoti.png" alt="Jyoti">
-          </div>
-          <h3 class="faculty-slider-name">Jyoti</h3>
-          <p class="faculty-slider-desc">
-            Assistant Professor, Centre for Writing Studies
-          </p>
-        </div>
-
-        <div class="faculty-slider-card swiper-slide">
-          <div class="faculty-slider-img-wrapper">
-            <img src="assets/sasi.png" alt="Dr. Sasi Sekhar Mallampalli">
-          </div>
-          <h3 class="faculty-slider-name">Dr. Sasi Sekhar Mallampalli</h3>
-          <p class="faculty-slider-desc">
-            Assistant Professor English Language Centre
-          </p>
-        </div>
-
-        <div class="faculty-slider-card swiper-slide">
-          <div class="faculty-slider-img-wrapper">
-            <img src="assets/pia.png" alt="Pia Bakshi">
-          </div>
-          <h3 class="faculty-slider-name">Pia Bakshi</h3>
-          <p class="faculty-slider-desc">
-            Adjunct Faculty, Centre for Writing Studies
-          </p>
+        <div class="career-pathways-cards">
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/english-language.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">English Language Educator</h3>
+            <p class="career-pathway-card-text"><span style="color:blueviolet;font-weight: bold; ">English Language Educator</span> in schools, colleges, universities, and language institutions.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/tesol.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">TESOL Instructor</h3>
+            <p class="career-pathway-card-text"><span style="color:blueviolet;font-weight: bold; ">TESOL Instructor</span> or Language Trainer in academic, professional, and corporate training environments​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/academic.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Academic Coordinator</h3>
+            <p class="career-pathway-card-text"><span style="color:blueviolet;font-weight: bold; ">Academic Coordinator</span> or Programme Facilitator supporting curriculum implementation and learner development.​​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/education.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Education and Training Professional</h3>
+            <p class="career-pathway-card-text"><span style="color:blueviolet;font-weight: bold; ">Education and Training Professional</span> within NGOs, educational organisations, and learning-focused institutions.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/international.png" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">International English Language Teaching</h3>
+            <p class="career-pathway-card-text"><span style="color:blueviolet;font-weight: bold; ">International English Language Teaching</span> Roles in Multicultural and Multilingual Education Settings.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/pathway.png" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Pathways to Further Academic Study</h3>
+            <p class="career-pathway-card-text"><span style="color:blueviolet;font-weight: bold; ">Pathways to Further Academic Study,</span> including research-oriented programmes and doctoral studies in education or applied linguistics.​</p>
+          </article>
         </div>
       </div>
     </div>
-
-    <button type="button" class="faculty-slider-nav faculty-slider-right" aria-label="Next faculty">
-      &#10095;
-    </button>
   </div>
-
-  <div class="faculty-dots" id="facultyDots" aria-label="Faculty pagination"></div>
 </section>
 
-<!-- Recognitions and Accreditations Section -->
-<section class="recognition-section">
-  <h2 class="rec-heading">Recognitions and Accreditations</h2>
+<section class="faculty-section section-global" id="faculty">
+  <div class="container faculty-container">
+    <div class="faculty-header">
+      <h2 class="faculty-title">
+        <span class="faculty-title-meet">Meet</span>
+        <span class="faculty-title-our">Our</span>
+        <span class="faculty-title-faculty">Faculty</span>
+      </h2>
+    </div>
 
-  <div class="rec-cards-grid" id="recCardsGrid">
-    <div class="rec-card">
-      <div class="rec-card__badge">
+    <div class="faculty-slider-wrap">
+      <button class="faculty-arrow prev" type="button" aria-label="Previous faculty">&#10094;</button>
+      <button class="faculty-arrow next" type="button" aria-label="Next faculty">&#10095;</button>
+
+      <div class="faculty-track" id="facultyTrack">
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/suman.png" alt="Dr. Suman Rani">
+          </div>
+          <h5 class="faculty-name">Dr. Suman Rani</h5>
+          <p class="faculty-role">Associate Professor and Director English Language Centre</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/fatemeh.png" alt="Dr. Fatemeh Rajabi">
+          </div>
+          <h5 class="faculty-name">Dr. Fatemeh Rajabi</h5>
+          <p class="faculty-role">Associate Professor English Language Centre</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/jyoti.png" alt="Jyoti">
+          </div>
+          <h5 class="faculty-name">Jyoti</h5>
+          <p class="faculty-role">Assistant Professor, Centre for Writing Studies</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/sasi.png" alt="Dr. Sasi Sekhar Mallampalli">
+          </div>
+          <h5 class="faculty-name">Dr. Sasi Sekhar Mallampalli</h5>
+          <p class="faculty-role">Assistant Professor English Language Centre</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/pia.png" alt="Pia Bakshi">
+          </div>
+          <h5 class="faculty-name">Pia Bakshi</h5>
+          <p class="faculty-role">Adjunct Faculty, Centre for Writing Studies</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recognition-section section-global">
+  <img class="recognition-bg" src="assets/Recognition-bg.png" alt="" aria-hidden="true">
+  <div class="recognition-container">
+    <h2 class="recognition-title">Recognitions and Accreditations</h2>
+    <div class="recognition-grid" id="recognitionGrid">
+      <div class="rec-card rec-card-small">
         <img src="assets/recognition-4.png" alt="Top 150 Under 50 Globally - QS Young University Rankings 2022">
       </div>
-    </div>
-
-    <div class="rec-card">
-      <div class="rec-card__badge">
+      <div class="rec-card rec-card-small">
         <img src="assets/recognition-2.png" alt="Institution of Eminence - Ministry of Education, Government of India">
       </div>
-    </div>
-
-    <div class="rec-card rec-card--center">
-      <div class="rec-card__badge">
-        <img src="assets/recog-3.png" alt="JGU Global Rankings - India's No. 1 Ranked University">
+      <div class="rec-card rec-card-main">
+        <img src="assets/recog-3.png" alt="JGU Global Rankings - India&#x27;s No. 1 Ranked University">
       </div>
-    </div>
-
-    <div class="rec-card">
-      <div class="rec-card__badge">
+      <div class="rec-card rec-card-small">
         <img src="assets/recognition-9.png" alt="Ranked No. 1 Private University in India - QS World University Rankings">
       </div>
-    </div>
-
-    <div class="rec-card">
-      <div class="rec-card__badge">
+      <div class="rec-card rec-card-small">
         <img src="assets/5.png" alt="Ranked No. 1 Globally for Online Learning - THE 2024">
       </div>
     </div>
-  </div>
-
-  <div class="rec-dots" id="recDots" aria-label="Recognition cards pagination"></div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-  <h2 class="faq-heading">Frequently Asked Questions <span>(FAQs)</span></h2>
-
-  <div class="faq-container">
-
-    <div class="faq-item active">
-      <button type="button" class="faq-question" aria-expanded="true">
-        <span class="faq-question-text">Can I pursue this alongside my job?</span>
-        <span class="faq-icon" aria-hidden="true"></span>
-      </button>
-      <div class="faq-answer">
-        <p>Yes, the programme is designed for working professionals.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button type="button" class="faq-question" aria-expanded="false">
-        <span class="faq-question-text">What is required for admission?</span>
-        <span class="faq-icon" aria-hidden="true"></span>
-      </button>
-      <div class="faq-answer">
-        <p>A Bachelor's degree (minimum 50%) or relevant work experience, along with a Statement of Purpose.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button type="button" class="faq-question" aria-expanded="false">
-        <span class="faq-question-text">Is the programme suitable for career switchers?</span>
-        <span class="faq-icon" aria-hidden="true"></span>
-      </button>
-      <div class="faq-answer">
-        <p>Yes, it supports both educators and professionals entering the field of English language education.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button type="button" class="faq-question" aria-expanded="false">
-        <span class="faq-question-text">Do I need a teaching background to apply?</span>
-        <span class="faq-icon" aria-hidden="true"></span>
-      </button>
-      <div class="faq-answer">
-        <p>No. Applicants from any academic discipline are eligible to apply, subject to the specified criteria.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button type="button" class="faq-question" aria-expanded="false">
-        <span class="faq-question-text">Is the programme delivered entirely online for international learners?</span>
-        <span class="faq-icon" aria-hidden="true"></span>
-      </button>
-      <div class="faq-answer">
-        <p>Yes. The programme is fully online and can be completed from any location.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section class="enquiry-section">
-  <h2 class="title-center enquiry-section__title">Enquire Now!</h2>
-
-  <div class="enquiry-wrapper">
-    <div class="enquiry-card">
-      <div class="enquiry-form-panel">
-        <div class="npf_wgts enquiry-npf-widget" data-height="520px" data-w="2333389e25fd5a77c9fcb43e33be6c3d"></div>
-      </div>
-
-      <div class="enquiry-text-panel">
-        <h3 class="enquiry-heading">Let's connect and shape your path at JGU!</h3>
-        <p class="enquiry-subtext">Reach out to know more about programmes, admissions, and opportunities</p>
-      </div>
-    </div>
+    <div class="recognition-dots" id="recognitionDots" role="tablist" aria-label="Recognition slides"></div>
   </div>
 </section>
 
-<footer class="footer-center">
-  <p class="fw-bold">
+<section class="faq-section section-global" id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-title">
+      <span class="faq-title-main">Frequently Asked Questions</span><span class="faq-title-sub"> (FAQs)</span>
+    </h2>
+
+    <div class="faq-grid">
+      <div class="faq-col">
+        <div class="accordion faq-accordion" id="faqLeft">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq1">
+                Can I pursue this alongside my job?
+              </button>
+            </h2>
+            <div id="faq1" class="collapse show" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Yes, the programme is designed for working professionals.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq2">
+                What is required for admission?
+              </button>
+            </h2>
+            <div id="faq2" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                A Bachelor's degree (minimum 50%) or relevant work experience, along with a Statement of Purpose.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq3">
+                Is the programme suitable for career switchers?
+              </button>
+            </h2>
+            <div id="faq3" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Yes, it supports both educators and professionals entering the field of English language education.
+              </div>
+            </div>
+          </div>
+</div>
+      </div>
+      <div class="faq-col">
+        <div class="accordion faq-accordion" id="faqRight">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq100">
+                Do I need a teaching background to apply?
+              </button>
+            </h2>
+            <div id="faq100" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                No. Applicants from any academic discipline are eligible to apply, subject to the specified criteria.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq101">
+                Is the programme delivered entirely online for international learners?
+              </button>
+            </h2>
+            <div id="faq101" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                Yes. The programme is fully online and can be completed from any location.
+              </div>
+            </div>
+          </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="enquire-section section-global" id="enquire">
+  <div class="container enquire-container">
+    <h2 class="enquire-heading">Enquire Now!</h2>
+    <div class="enquire-card">
+      <div class="enquire-form-panel">
+        <div class="enquire-npf-scroll">
+          <div class="npf_wgts" data-height="400px" data-w="2333389e25fd5a77c9fcb43e33be6c3d"></div>
+        </div>
+      </div>
+      <div class="enquire-info-panel">
+        <div class="info-section">
+          <h2>Let's connect and shape your path at JGU!</h2>
+          <p class="info-text">Reach out to know more about programmes, admissions, and opportunities</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
+<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
+<script>let npfW2333389e25fd5a77c9fcb43e33be6c3d=new NpfWidgetsInit({'widgetId':'2333389e25fd5a77c9fcb43e33be6c3d','baseurl':'widgets.in8.nopaperforms.com','formTitle':'Enquiry Form','titleColor':'#FF0033','backgroundColor':'#ddd','iframeHeight':'500px','buttonbgColor':'#4c79dc','buttonTextColor':'#FFF'});</script>
+
+<footer class="site-footer">
+  <p class="text-center font-weight-bold">
     © 2026 O.P. Jindal Global University. All Rights Reserved
-    
   </p>
 </footer>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-  const featuresSwiperEl = document.querySelector(".mySwiper");
-  if (featuresSwiperEl) {
-    new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".mySwiper .swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }
-    });
-  }
-
-  if (document.querySelector(".whySwiper")) {
-    new Swiper(".whySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        1200: { slidesPerView: 3 },
-        900: { slidesPerView: 2 },
-        600: { slidesPerView: 1 },
-        0: { slidesPerView: 1 }
-      }
-    });
-  }
-
-  if (document.querySelector(".museoSwiper")) {
-    new Swiper(".museoSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 25,
-      pagination: {
-        el: ".museoSwiper .swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000,
-      },
-      breakpoints: {
-        1200: { slidesPerView: 4 },
-        992: { slidesPerView: 3 },
-        768: { slidesPerView: 1 },
-        480: { slidesPerView: 1 },
-      }
-    });
-  }
-
-  // Fees Structure Table JS
-
-  const feeTabs = document.querySelectorAll(".fees-tab");
-const contentArea = document.getElementById("contentArea");
-const paymentOptionsBlock = document.getElementById("paymentOptionsBlock");
-const feesTableHTML = `
-        <p class="fees-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
-        <table class="fees-table">
-          <thead>
-            <tr>
-              <th>Fee</th>
-              <th>Amount</th>
-              <th>Due Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Registration Amount</td>
-              <td>INR 25,000</td>
-              <td>Upon acceptance of Offer Letter</td>
-            </tr>
-            <tr>
-              <td>Instalment 1</td>
-              <td>INR 1,25,000</td>
-              <td>Before Batch Commencement</td>
-            </tr>
-            <tr>
-              <td>Instalment 2</td>
-              <td>INR 1,25,000</td>
-              <td>By 15th July 2027</td>
-            </tr>
-          </tbody>
-        </table>
-      `;
-function setPaymentOptionsVisible(show) {
-  if (paymentOptionsBlock) {
-    paymentOptionsBlock.hidden = !show;
-    paymentOptionsBlock.style.display = show ? "" : "none";
-  }
-}
-
-/* Recognition cards — mobile dotted pagination */
-(function () {
-  const grid = document.getElementById("recCardsGrid");
-  const dotsWrap = document.getElementById("recDots");
-  if (!grid || !dotsWrap) return;
-
-  const cards = Array.from(grid.querySelectorAll(".rec-card"));
-  if (!cards.length) return;
-
-  dotsWrap.innerHTML = "";
-  cards.forEach((_, index) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "rec-dot" + (index === 0 ? " active" : "");
-    btn.setAttribute("aria-label", "Go to recognition card " + (index + 1));
-    btn.addEventListener("click", () => {
-      cards[index].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    });
-    dotsWrap.appendChild(btn);
-  });
-
-  const dots = Array.from(dotsWrap.querySelectorAll(".rec-dot"));
-
-  function setActive(index) {
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
-    });
-  }
-
-  function updateActiveFromScroll() {
-    const gridRect = grid.getBoundingClientRect();
-    const centerX = gridRect.left + gridRect.width / 2;
-    let closest = 0;
-    let minDist = Infinity;
-
-    cards.forEach((card, index) => {
-      const rect = card.getBoundingClientRect();
-      const cardCenter = rect.left + rect.width / 2;
-      const dist = Math.abs(cardCenter - centerX);
-      if (dist < minDist) {
-        minDist = dist;
-        closest = index;
-      }
-    });
-
-    setActive(closest);
-  }
-
-  let ticking = false;
-  grid.addEventListener("scroll", () => {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => {
-      updateActiveFromScroll();
-      ticking = false;
-    });
-  }, { passive: true });
-
-  window.addEventListener("resize", updateActiveFromScroll);
-  updateActiveFromScroll();
-})();
-
-feeTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    // Remove active class from all tabs
-    feeTabs.forEach((t) => t.classList.remove("active"));
-    tab.classList.add("active");
-
-    const type = tab.getAttribute("data-tab");
-
-    if (type === "fees") {
-      contentArea.innerHTML = feesTableHTML;
-      setPaymentOptionsVisible(true);
-    }
-
-    if (type === "details") {
-      setPaymentOptionsVisible(false);
-      contentArea.innerHTML = `
-        <table class="fees-table">
-           <thead>
-            <tr>
-              <th>Category</th>
-              <th>Information</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Programme offered by</td>
-              <td>English Language Centre, The Office of English & Foreign Languages (OEFL), O.P. Jindal Global University (JGU)</td>
-            </tr>
-            <tr>
-              <td>Total Tuition Fee</td>
-              <td>INR 2,75,000</td>
-            </tr>
-            <tr>
-              <td>Duration</td>
-              <td>12 months  (Total of 3 Trimesters)</td>
-            </tr>
-            <tr>
-              <td>Cohorts</td>
-              <td>March 2026 </td>
-            </tr>
-            <tr>
-              <td>Credits</td>
-              <td>60 Credits</td>
-            </tr>
-             <tr>
-              <td>Structure</td>
-              <td>12 courses with an estimated learner effort of 12–15 hours per week</td>
-            </tr>
-            <tr>
-              <td>Delivery Mode</td>
-              <td>Fully Online — includes instructional videos, essential readings, live sessions, discussions, and assessments</td>
-            </tr>
-            <tr>
-              <td>Flexibility</td>
-              <td>Learn from anywhere with no travel requirements</td>
-            </tr>
-            <tr>
-              <td>Age Limit</td>
-              <td>No maximum age limit for applicants</td>
-            </tr>
-          </tbody>
-        </table>
-      `;
-    }
-
-    if (type === "eligibility") {
-      setPaymentOptionsVisible(false);
-      contentArea.innerHTML = `
-    <table class="fees-table">
-           <thead>
-            <tr>
-              <th>Category</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Educational Qualification</td>
-              <td>Bachelor’s degree in any discipline with a minimum of 50% marks, or relevant work experience</td>
-            </tr>
-            <tr>
-              <td>Identity Proof</td>
-              <td>Valid government-issued ID proof (Passport mandatory for international applicants)</td>
-            </tr>
-            <tr>
-              <td>Selection Process</td>
-              <td>Submission of a Statement of Purpose (500–1000 words) outlining academic background, professional experience, and motivation</td>
-            </tr>
-          </tbody>
-        </table>
-      `;
-    }
-  });
-});
-
-  
-// Trimester Tab Js
-const tabs = document.querySelectorAll(".tab");
-const title = document.querySelector(".trimester-title");
-const tableBody = document.querySelector(".course-table tbody");
-const totalCredits = document.querySelector(".course-table tfoot td:last-child strong");
-
-if (tabs.length && title && tableBody && totalCredits) {
-const courseData = {
-  1: {
-    title: "Trimester 1",
-    courses: [
-      ["Introduction to Critical Reading & Research Writing", 5],
-      ["Approaches to Teaching English", 5],
-      ["Bilingual and Multilingual Classroom", 5],
-      ["Curriculum and Assessment in TESOL", 5],
-    ]
-  },
-  2: {
-    title: "Trimester 2",
-    courses: [
-      ["Introduction to Linguistics", 5],
-      ["Critical Pedagogy", 5],
-      ["English for Specific Purposes", 5],
-      ["Digital Pedagogy: Multimedia & AI", 5],
-    ]
-  },
-  3: {
-    title: "Trimester 3",
-    courses: [
-      ["Teaching English Language through Literature", 5],
-      ["Corpus Linguistics", 5],
-      ["Capstone Project", 10],
-    ]
-  }
-};
-
-tabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-
-    document.querySelector(".tab.active").classList.remove("active");
-    tab.classList.add("active");
-
-    const trimester = index + 1;
-    const data = courseData[trimester];
-
-    title.textContent = data.title;
-
-    tableBody.innerHTML = "";
-    let total = 0;
-
-    data.courses.forEach(course => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td style="color:black">${course[0]}</td>
-        <td style="color:black">${course[1]}</td>
-      `;
-      total += course[1];
-      tableBody.appendChild(tr);
-    });
-
-    totalCredits.textContent = total;
-  });
-});
-}
-
-// Career Outcome JS
-document.addEventListener("DOMContentLoaded", function () {
-
-  let position = 0;
-  const cardWidth = 325;
-  const maxShift = 5 - 3;
-
-  const rows = [
-    document.getElementById("row1"),
-    document.getElementById("row2")
-  ];
-
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-  const progressBar = document.getElementById("progressBar");
-
-  if (!nextBtn || !prevBtn || !progressBar) return;
-
-  nextBtn.addEventListener("click", () => {
-    if (position < maxShift) {
-      position++;
-      slide();
-    }
-  });
-
-  prevBtn.addEventListener("click", () => {
-    if (position > 0) {
-      position--;
-      slide();
-    }
-  });
-
-  function slide() {
-    rows.forEach(row => {
-      if (row) {
-        row.style.transform = `translateX(-${position * cardWidth}px)`;
-      }
-    });
-
-    progressBar.style.width = ((position / maxShift) * 100) + "%";
-  }
-
-});
-
-// Faculty Slider JS
-(function () {
-  const facultyEl = document.querySelector(".faculty-slider-wrapper");
-  if (!facultyEl || typeof Swiper === "undefined") return;
-
-  const facultySwiper = new Swiper(facultyEl, {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    grabCursor: true,
-    watchOverflow: true,
-    loop: false,
-    navigation: {
-      nextEl: ".faculty-slider-outer .faculty-slider-right",
-      prevEl: ".faculty-slider-outer .faculty-slider-left",
-    },
-    pagination: {
-      el: "#facultyDots",
-      clickable: true,
-      bulletClass: "faculty-dot",
-      bulletActiveClass: "faculty-dot-active",
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 16,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-      1100: {
-        slidesPerView: 5,
-        spaceBetween: 12,
-        allowTouchMove: false,
-        grabCursor: false,
-      },
-    },
-  });
-
-  window.facultySwiper = facultySwiper;
-})();
-
-// Recognition Slider JS — static 5-card grid (no swiper)
-
-// FAQ Section JS
-document.querySelectorAll(".faq-item").forEach(item => {
-  const question = item.querySelector(".faq-question");
-
-  if (!question) return;
-
-  question.addEventListener("click", () => {
-    const isActive = item.classList.contains("active");
-
-    document.querySelectorAll(".faq-item").forEach(i => {
-      i.classList.remove("active");
-      const btn = i.querySelector(".faq-question");
-      if (btn) btn.setAttribute("aria-expanded", "false");
-    });
-
-    if (!isActive) {
-      item.classList.add("active");
-      question.setAttribute("aria-expanded", "true");
-    }
-  });
-});
-
-</script>
-
-  <!-- NPF embed forms: inject iframes directly.
-       Official emwgts.js fails on file:// (cookie errors) and NPF returns a
-       blank form unless cu/referrer look like the live domain. -->
-  <script type="text/javascript">
-    (function () {
-      var NPF_WIDGET_HOST = "https://widgets.in8.nopaperforms.com/register?";
-      var NPF_ALLOWED_CU = "https://jguonline.edu.in/";
-
-      function mountNpfEmbeds() {
-        var widgets = document.querySelectorAll(".npf_wgts");
-        var referrer = document.referrer || NPF_ALLOWED_CU;
-        var currentUrl = NPF_ALLOWED_CU;
-        var utm = "";
-
-        try {
-          var params = new URLSearchParams(location.search || "");
-          var parts = [];
-          params.forEach(function (value, key) {
-            parts.push(key + "npfeq" + value);
-          });
-          utm = parts.join("||");
-        } catch (e) {}
-
-        /* Prefer real page URL when already on an http(s) host */
-        if (/^https?:/i.test(location.href)) {
-          currentUrl = location.href;
-          if (!referrer) referrer = location.origin + "/";
-        }
-
-        widgets.forEach(function (el) {
-          var widgetId = el.getAttribute("data-w");
-          var height = el.getAttribute("data-height") || "420px";
-          if (!widgetId) return;
-
-          if (height === "parent") {
-            height = (el.parentElement ? el.parentElement.clientHeight : 420) + "px";
-          }
-
-          var src =
-            NPF_WIDGET_HOST +
-            "&r=" + encodeURIComponent(referrer) +
-            "&q=" + encodeURIComponent(utm) +
-            "&w=" + encodeURIComponent(widgetId) +
-            "&m=" +
-            "&cu=" + encodeURIComponent(currentUrl);
-
-          /* Always remount so a previous blank iframe is replaced */
-          el.innerHTML = "";
-          var iframe = document.createElement("iframe");
-          iframe.frameBorder = "0";
-          iframe.width = "100%";
-          iframe.height = height;
-          iframe.style.cssText =
-            "width:100%;height:" + height + ";border:0;display:block;background:transparent;";
-          iframe.setAttribute(
-            "sandbox",
-            "allow-top-navigation allow-scripts allow-forms allow-same-origin allow-downloads allow-popups allow-popups-to-escape-sandbox"
-          );
-          iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
-          iframe.setAttribute("loading", "eager");
-          iframe.setAttribute("title", "Enquiry Form");
-          iframe.src = src;
-          el.appendChild(iframe);
-        });
-      }
-
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", mountNpfEmbeds);
-      } else {
-        mountNpfEmbeds();
-      }
-    })();
-  </script>
-
-  <!-- NPF popup for ENROLL / brochure buttons only -->
-  <script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
-  <script>
-    let npfW2333389e25fd5a77c9fcb43e33be6c3d = new NpfWidgetsInit({
-      widgetId: "2333389e25fd5a77c9fcb43e33be6c3d",
-      baseurl: "widgets.in8.nopaperforms.com",
-      formTitle: "Enquiry Form",
-      titleColor: "#FF0033",
-      backgroundColor: "#ddd",
-      iframeHeight: "500px",
-      buttonbgColor: "#4c79dc",
-      buttonTextColor: "#FFF",
-    });
-  </script>
-
-
-<!-- Facebook Pixel Code -->
-<script>
-!(function (f, b, e, v, n, t, s) {
-if (f.fbq) return;
-n = f.fbq = function () {
-n.callMethod
-? n.callMethod.apply(n, arguments)
-: n.queue.push(arguments);
-};
-if (!f._fbq) f._fbq = n;
-n.push = n;
-n.loaded = !0;
-n.version = "2.0";
-n.queue = [];
-t = b.createElement(e);
-t.async = !0;
-t.src = v;
-s = b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t, s);
-})(
-window,
-document,
-"script",
-"https://connect.facebook.net/en_US/fbevents.js"
-);
-fbq("init", "1243343920376799");
-fbq("track", "PageView");
-</script>
-<noscript>
-<img
-height="1"
-width="1"
-src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView
-&noscript=1"
-/>
-</noscript>
-<!-- End Facebook Pixel Code -->
 
 <!-- NoPaperForms / NIAA Chatbot -->
 <div class="npf_chatbots" data-w="a8b32b8ab432456a971900791d70c15b" style="display:none;"></div>
